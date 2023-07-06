@@ -17,7 +17,7 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
 
     def multiply(num: float) -> float:
         """
-        Multiply a float number by the function
+        Multiply a float number by the function.
 
         Args:
             num (float): number to multiply
