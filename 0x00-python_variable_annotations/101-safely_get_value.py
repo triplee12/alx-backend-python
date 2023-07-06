@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """More involved type annotations."""
 
-from types import NoneType
 from typing import Mapping, Any, Union, TypeVar
 
 T = TypeVar('T')
@@ -9,7 +8,7 @@ T = TypeVar('T')
 
 def safely_get_value(
     dct: Mapping, key: Any,
-    default: Union[T, NoneType] = None
+    default: Union[T, None] = None
 ) -> Union[Any, T]:
     """
     Get the value of the given key.

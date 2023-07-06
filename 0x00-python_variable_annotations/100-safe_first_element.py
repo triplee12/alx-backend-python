@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """Duck typing - first element of a sequence."""
 
-from types import NoneType
 from typing import Any, Union, Sequence
 
 
 # The types of the elements of the input are not know
-def safe_first_element(lst: Sequence[Any]) -> Union[Any, NoneType]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """
     Get the first element of the input.
 
