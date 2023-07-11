@@ -13,5 +13,5 @@ async def async_comprehension() -> List[float]:
     Returns:
         List[float]: list of floats
     """
-    lst = [i async for i in async_generator()]
+    lst: List[float] = [i async for i in async_generator()]
     return lst
